@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sandftechnologies.moviee.fragments.HomeFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Now Playing"
+        android:textColor="@color/black"
+        android:id="@+id/playing_label"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/oxygen"
+        android:textStyle="bold|italic"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/playing_label"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/now_playing_recycler"
+        android:overScrollMode="never"
+        android:paddingLeft="10dp"
+        android:clipToPadding="false"/>
+
+</RelativeLayout>
